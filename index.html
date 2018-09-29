@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Showcase</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand|Open+Sans" rel="stylesheet">
+	</head>
+	<body>
+		<div class="loader-overlay">
+			<div class="curtain">
+				<span class="curtain-text">
+					Wildlife
+				</span>
+			</div>
+			<div class="curtain">
+				<span class="curtain-text">
+					Vegetation
+				</span>
+			</div>
+			<div class="curtain">
+				<span class="curtain-text">
+					Rivers
+				</span>
+			</div>
+		</div>
+		<div class="showcase">
+			<div class="case" style="background-image: url(assets/cheetah.jpg)" data-content="#wildlife-content">
+				<span class="header">
+					Save Wildlife
+				</span>
+			</div>
+			<div class="case" style="background-image: url(assets/plant.jpg)" data-content="#forest-content">
+				<span class="header">
+					Save Forests
+				</span>
+			</div>
+			<div class="case" style="background-image: url(assets/river.jpg)" data-content="#water-content">
+				<span class="header">
+					Save Water
+				</span>
+			</div>
+		</div>
+		<div id="content">
+			
+		</div>
+
+		<div id="hidden-content">
+			<section id="home-content">
+				<h2 style="text-align: center">Lets not destroy Earth<br/><small> Its the only planet we have</small></h2>
+			</section>
+			<section id="wildlife-content">
+				<h2 style="text-align: center">Save Wildlife<br/><small> Its worth keeping them around</small></h2>
+			</section>
+			<section id="forest-content">
+				<h2 style="text-align: center">Save forests<br/><small> Its whats keeping you alive</small></h2>
+			</section>
+			<section id="water-content">
+				<h2 style="text-align: center">Save water<br/><small> Its what you are made of</small></h2>
+			</section>
+		</div>
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
