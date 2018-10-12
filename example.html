@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Example Search Engine </title>
+		<meta name="viewport" content="width=device-width">
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<p>
+			This is an example of what the scrapper can do. It scraps online resources for the search term and returns a nice, clean,
+			 textual representation of the same. We are going to create summaries based on these texts.
+		</p>
+		<input type="text" id="searchtext" placeholder="Enter search term...">
+		<button onclick="search()">Search</button>
+		<h2>RESULT</h2>
+		<div id="result"></div>
+		<script type="text/javascript" src="general_assets/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			function search()
+			{
+				var term = $("#searchtext").val();
+				$.get("includes/example_wiki.php?q="+term+"&res=wp", function(data){
+					$("#result").text(data);
+				});
+			}
+		</script>
+	</body>
+</html>
